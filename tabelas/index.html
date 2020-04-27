@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 + CSS 3: Tabelas</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Boletim do Aluno
+      </caption>
+      <colgroup></colgroup>
+      <colgroup span="3" style="background-color: blue;"></colgroup>
+      <thead>
+        <tr>
+          <th scope="col" id="disciplina" rowspan="2">
+            Disciplina
+          </th>
+          <th scope="colgroup" id="notas" colspan="3">Notas</th>
+          <th scope="col" id="media" rowspan="2">MF</th>
+        </tr>
+        <tr>
+          <th scope="col" id="nota1" headers="notas">1</th>
+          <th scope="col" id="nota2" headers="notas">2</th>
+          <th scope="col" id="nota3" headers="notas">3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td headers="disciplina">Matemática</td>
+          <td headers="nota1">7,0</td>
+          <td headers="nota2">8,0</td>
+          <td headers="nota3">9,0</td>
+          <td headers="media">8,0</td>
+        </tr>
+        <tr>
+          <td headers="disciplina">Geografia</td>
+          <td headers="nota1">8,0</td>
+          <td headers="nota2">6,0</td>
+          <td headers="nota3">7,0</td>
+          <td headers="media">7,0</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
